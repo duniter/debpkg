@@ -3,10 +3,10 @@
 DUN_ROOT=/opt/duniter
 mkdir $DUN_ROOT/sources
 unzip -d $DUN_ROOT/sources/ $DUN_ROOT/duniter-desktop.nw
-unzip -d $DUN_ROOT $DUN_ROOT/nw.nwb
+unzip -d $DUN_ROOT/nw $DUN_ROOT/nw.nwb
+cp -R $DUN_ROOT/sources/gui/* $DUN_ROOT/nw/
 chmod +r -R $DUN_ROOT
 chmod +x $DUN_ROOT/nw/nw $DUN_ROOT/nw/lib $DUN_ROOT/nw/locales
-cp -R $DUN_ROOT/sources/gui/* $DUN_ROOT/nw/
 
 ln -s $DUN_ROOT/sources/ucoin.sh /usr/bin/duniter
 ln -s $DUN_ROOT/nw/nw /usr/bin/duniter-desktop
