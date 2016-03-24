@@ -8,5 +8,5 @@ cp -R $DUN_ROOT/sources/gui/* $DUN_ROOT/nw/
 chmod +r -R $DUN_ROOT
 chmod +x $DUN_ROOT/nw/nw $DUN_ROOT/nw/lib $DUN_ROOT/nw/locales
 
-ln -s $DUN_ROOT/sources/ucoin.sh /usr/bin/duniter
+ln -s $DUN_ROOT/sources/bin/ucoind /usr/bin/duniter
 ln -s $DUN_ROOT/nw/nw /usr/bin/duniter-desktop
